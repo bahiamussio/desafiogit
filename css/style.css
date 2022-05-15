@@ -434,13 +434,108 @@ textarea {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 1em;
-    padding:1rem;
+    padding: 1rem;
 }
 
 .imgGrid img {
     width: 100%;
     height: auto;
 }
+
+/* Animaciones, Transiciones y Gradientes */
+ 
+/* HEADER */
+
+.top p {
+    animation: top 10s linear 1s infinite normal none;
+}
+
+@keyframes top {
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+
+	10%,
+	30%,
+	50%,
+	70% {
+		transform: translateX(-10px);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: translateX(10px);
+	}
+
+	80% {
+		transform: translateX(8px);
+	}
+
+	90% {
+		transform: translateX(-8px);
+	}
+}
+
+.nav ul li a {
+    transition: font-size 1s ease 0s;
+}
+
+.nav ul li a:hover {
+    font-size: 24px;
+}
+
+.newsletter h4 {
+    animation: newsLetter 10s ease 0s infinite alternate both;
+}
+
+@keyframes newsLetter {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 0;
+	}
+
+	10% {
+		transform: rotate(2deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-4deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(4deg);
+	}
+
+	80% {
+		transform: rotate(-2deg);
+	}
+
+	90% {
+		transform: rotate(2deg);
+	}
+}
+
+/* INDEX */
+
+.productosIndex img:hover {
+    height: 32%;
+    width: 32%;
+    transition:width 0.5s linear 0s,height 0.5s linear 0s;
+}
+
+/* PRODUCTOS */
+
+.imgGrid:hover {
+    filter: saturate(200%) drop-shadow(5px 5px 10px #000);
+}
+
 
 /* Grid */
 
