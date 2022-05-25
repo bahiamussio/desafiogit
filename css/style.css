@@ -59,7 +59,7 @@ header {
 }
 
 .top p {
-    padding: 0px 0rem 0rem;
+    padding: 15px 0rem 0rem;
     font-size: large;
     padding-left: 40%;
 }
@@ -87,6 +87,7 @@ header {
 .inputB {
     display: flex;
     align-items: center;
+
 }
 
 .inputB input,
@@ -97,6 +98,7 @@ textarea {
     border-radius: 15px;
     text-align: center;
     border: 0;
+    font-family: 'Merriweather', serif;
 }
 
 .inputB svg {
@@ -118,23 +120,112 @@ textarea {
 
 /* --Nav-- */
 
-.nav {
+#nav {
     width: 100%;
+    background-color: #f2ccc3ff !important;
     height: auto;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
     padding-bottom: 0.5rem;
+    padding-left: 15%;
+
 }
 
+#nav ul li {
 
-.nav ul li {
     display: inline-block;
     font-size: 22px;
     padding-left: 45px;
     padding-right: 45px;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: #c7fc36ff !important;
+}
+
+/* Newsletter */
+.newsletter {
+    height: 11rem;
+    width: 100%;
+    background-color: #c7fc36ff;
+    padding: 1rem 0rem 1rem 0;
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.newsletter h4 {
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 0.5rem;
+}
+
+.newsletter p {
+    font-size: 1.25rem;
+    font-family: 'Merriweather', serif;
+}
+
+.input {
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.input input,
+textarea {
+    width: 300px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center !important;
+    border: 0;
+    font-family: 'Merriweather', serif;
+}
+
+.input svg {
+    width: 25px;
+    margin-left: -30px;
+    z-index: 0;
+}
+
+/* Botón de What'sapp */
+.btnWhatsapp {
+    display: block;
+    width: 25px;
+    position: fixed;
+    right: 40px;
+    bottom: 70px;
+}
+
+.btnWhatsapp img {
+    width: 50px;
+}
+
+/* --FOOTER-- */
+footer {
+    background-color: #f2ccc3ff;
+    width: auto;
+    height: 8.5rem;
+    padding: 10px 10px 20px 10px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 17px;
+    text-align: center;
+    color: white;
+}
+
+footer p {
+    font-size: 1.25rem;
+
+}
+
+footer h4 {
+    font-family: 'Merriweather', serif;
+    padding-bottom: 1rem;
 }
 
 /*+++++++++++++++++ INDEX ++++++++++++++++*/
@@ -142,22 +233,6 @@ textarea {
 /* MAIN */
 main {
     font-family: 'Bebas Neue', cursive;
-}
-
-/* "Carrusel" que aún no es carrusel, je. */
-
-.carrusel {
-    max-width: 99.85%;
-    height: auto;
-    background-color: white;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-}
-
-.carrusel img {
-    width: 100%;
-    padding-left: 2px;
 }
 
 /* Valores de la marca */
@@ -209,15 +284,20 @@ main {
     width: 100%;
     height: 8rem;
     text-align: center;
-    font-size: 4rem;
     color: #c7fc36ff;
     text-shadow: 0.1em 0.1em 0.4em rgb(255, 255, 255);
 }
 
+.seccionIndex h3 {
+    font-size: 4rem !important;
+    font-family: 'Bebas Neue', cursive;
+}
+
 .seccionIndex p {
-    font-family: 'Merriweather', serif;
+
     font-size: 1rem;
     color: black;
+    font-family: 'Merriweather', serif;
 }
 
 .productosIndex {
@@ -248,89 +328,6 @@ main {
     padding-bottom: 0.5rem;
 }
 
-/* Newsletter */
-.newsletter {
-    height: 10rem;
-    width: 100%;
-    background-color: #c7fc36ff;
-    padding: 0.5rem 0 0.5rem 0;
-    display: flex;
-    flex-flow: column wrap;
-    text-align: center;
-    justify-content: center;
-}
-
-.newsletter h4 {
-    color: black;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 3rem;
-    text-align: center;
-}
-
-.newsletter p {
-    font-size: 1.25rem;
-    font-family: 'Merriweather', serif;
-}
-
-.input {
-    margin: 0 auto;
-    margin-top: 0.5rem;
-    display: flex;
-    flex-flow: row nowrap;
-
-}
-
-.input input,
-textarea {
-    width: 300px;
-    background-color: white;
-    padding: 10px;
-    border-radius: 15px;
-    text-align: center !important;
-    border: 0;
-}
-
-.input svg {
-    width: 25px;
-    margin-left: -30px;
-    z-index: 0;
-}
-
-/* Botón de What'sapp */
-.btnWhatsapp {
-    display: block;
-    width: 25px;
-    position: fixed;
-    right: 70px;
-    bottom: 30px;
-}
-
-.btnWhatsapp img {
-    width: 50px;
-}
-
-/* --FOOTER-- */
-footer {
-    background-color: #f2ccc3ff;
-    width: auto;
-    height: 6rem;
-    padding: 10px 10px 20px 10px;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 17px;
-    text-align: center;
-    color: white;
-}
-
-footer p {
-    margin-bottom: 2px;
-    font-size: 1.25rem;
-
-}
-
-footer h4 {
-    font-family: 'Merriweather', serif;
-    padding-bottom: 1rem;
-}
 
 /* +++++++++++++ CONTACTO +++++++++++++ */
 
@@ -443,7 +440,7 @@ textarea {
 }
 
 /* Animaciones, Transiciones y Gradientes */
- 
+
 /* HEADER */
 
 .top p {
@@ -451,31 +448,32 @@ textarea {
 }
 
 @keyframes top {
-	0%,
-	100% {
-		transform: translateX(0);
-	}
 
-	10%,
-	30%,
-	50%,
-	70% {
-		transform: translateX(-10px);
-	}
+    0%,
+    100% {
+        transform: translateX(0);
+    }
 
-	20%,
-	40%,
-	60% {
-		transform: translateX(10px);
-	}
+    10%,
+    30%,
+    50%,
+    70% {
+        transform: translateX(-10px);
+    }
 
-	80% {
-		transform: translateX(8px);
-	}
+    20%,
+    40%,
+    60% {
+        transform: translateX(10px);
+    }
 
-	90% {
-		transform: translateX(-8px);
-	}
+    80% {
+        transform: translateX(8px);
+    }
+
+    90% {
+        transform: translateX(-8px);
+    }
 }
 
 .nav ul li a {
@@ -491,35 +489,36 @@ textarea {
 }
 
 @keyframes newsLetter {
-	0%,
-	100% {
-		transform: rotate(0deg);
-		transform-origin: 50% 0;
-	}
 
-	10% {
-		transform: rotate(2deg);
-	}
+    0%,
+    100% {
+        transform: rotate(0deg);
+        transform-origin: 50% 0;
+    }
 
-	20%,
-	40%,
-	60% {
-		transform: rotate(-4deg);
-	}
+    10% {
+        transform: rotate(2deg);
+    }
 
-	30%,
-	50%,
-	70% {
-		transform: rotate(4deg);
-	}
+    20%,
+    40%,
+    60% {
+        transform: rotate(-4deg);
+    }
 
-	80% {
-		transform: rotate(-2deg);
-	}
+    30%,
+    50%,
+    70% {
+        transform: rotate(4deg);
+    }
 
-	90% {
-		transform: rotate(2deg);
-	}
+    80% {
+        transform: rotate(-2deg);
+    }
+
+    90% {
+        transform: rotate(2deg);
+    }
 }
 
 /* INDEX */
@@ -527,7 +526,7 @@ textarea {
 .productosIndex img:hover {
     height: 32%;
     width: 32%;
-    transition:width 0.5s linear 0s,height 0.5s linear 0s;
+    transition: width 0.5s linear 0s, height 0.5s linear 0s;
 }
 
 /* PRODUCTOS */
@@ -556,7 +555,8 @@ textarea {
     grid-area: header;
 }
 
-.carrusel {
+
+#carouselExampleControls {
     grid-area: carr;
 }
 
@@ -584,128 +584,142 @@ textarea {
         display: none;
     }
 
+
+
     .busquedaHeader {
         width: 10%;
         margin: 10px;
         margin-right: 10rem;
     }
 
-
-    .nav {
-        width: 80%;
+    .logo img {
+        width: 70%;
     }
 
-    .nav ul li {
+    #nav {
+        max-width: 90%;
+        justify-content: center;
+    }
+
+    #nav ul li {
         padding-left: 10px;
         padding-right: 10px;
         font-size: large;
     }
 
-    .valoresHijo p {
-        font-size: 1.5rem;
-        padding-top: 15px;
-    }
-}
 
-@media screen and (max-width:830px) {
-    body {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width:650px) {
-
-    .logo img {
-        width: 80%;
+    @media screen and (max-width:830px) {
+        body {
+            width: 100%;
+        }
     }
 
+    @media screen and (max-width:650px) {
 
-    .nav ul li {
-        padding-left: 10px;
-        padding-right: 10px;
-        font-size: medium;
-    }
-
-}
+        .logo img {
+            width: 80%;
+        }
 
 
-@media screen and (max-width:564px) {
-
-    body {
-        width: 100%;
-    }
-
-    .busquedaHeader {
-        display: none;
-    }
-
-    .inputB {
-        display: none;
+        .nav ul li {
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: medium;
+        }
 
     }
 
-    .lupa {
-        width: 3.5rem;
-        height: auto;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        padding-right: 10px;
-        padding-left: 10px;
+
+    @media screen and (max-width:564px) {
+
+        body {
+            width: 100%;
+        }
+
+        .logo img {
+            width: 70%;
+        }
+
+        .busquedaHeader {
+            display: none;
+        }
+
+        .inputB {
+            display: none;
+        }
+
+        .lupa {
+            width: 3.5rem;
+            height: auto;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+        #nav {
+            justify-content: flex-start;
+            margin-left: -10px;
+        }
+
+        .foto1 {
+            display: none;
+        }
+
+        .foto3 {
+            display: none;
+
+        }
+
+        .foto2 {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        #carouselExampleControls {
+            height: auto;
+        }
+
+        .valoresPadre {
+            display: block;
+            height: auto;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+
+        .valoresHijo {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            margin: 0 auto;
+        }
+
+        .seccionIndex {
+            height: auto;
+            padding-bottom: 0.5rem;
+        }
+
+        .productosIndex img {
+            display: block;
+            width: 95%;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+
+        }
+
+        .descripcionProd {
+            display: none;
+        }
+
+        .contenedorGrid {
+            justify-content: center;
+        }
+
+        .newsletter {
+            height: auto;
+        }
+
+        .contenedorF {
+            justify-content: flex-start;
+        }
     }
-
-    .foto1 {
-        display: none;
-    }
-
-    .foto3 {
-        display: none;
-
-    }
-
-    .foto2 {
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .valoresPadre {
-        display: block;
-        height: auto;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-        /* padding-left: 3.75rem; */
-    }
-
-    .valoresHijo {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        margin: 0 auto;
-    }
-
-    .seccionIndex {
-        height: auto;
-        padding-bottom: 0.5rem;
-    }
-
-
-    .productosIndex img {
-        display: block;
-        width: 95%;
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
-
-    }
-
-    .descripcionProd {
-        display: none;
-    }
-
-    .newsletter {
-        display: none;
-    }
-
-    .contenedorF {
-        justify-content: flex-start;
-
-    }
-}
